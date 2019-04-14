@@ -1,0 +1,289 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Lora|Muli|Oswald|Poppins|Raleway');
+
+body {
+  background: #dfe6e9;
+  font-family: 'raleway', sans-serif;
+}
+
+.wrapper {
+  position:relative;
+  max-width: 100%; 
+  margin: 0;
+}
+
+img {
+  
+}
+
+::placeholder {
+  text-align: center;
+  font-family: 'oswald', sans-serif;
+}
+
+li {
+  list-style: none; 
+}
+
+h1 {
+  font-family: 'oswald', sans-serif;
+  text-transform: uppercase;
+      font-weight: 100;
+      text-align: center;
+}
+
+h2 {
+  font-family: 'oswald', sans-serif;
+}
+//Classes
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: .2em;
+  
+   &:hover {
+     color: #71726B;
+      transition: background-color 2s;
+  }
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 500;
+  border: 2px black solid;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  font-family: oswald, san-serif;
+  text-transform: uppercase;
+  
+    &:hover {
+     background-color: #C0C0C0;
+      transition: background-color 1s;
+  }
+  
+  }
+
+.container {
+  max-width: auto;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+
+.container-vert {
+  max-width: auto;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+
+ .title {
+      
+      color: black;
+      padding: 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 100;
+      text-align: center;
+    }
+
+//nav-bar
+
+#header {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  min-height: 75px;
+  padding: 0px 0px;
+  margin-left: 0px;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #dfe6e9;
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+     flex-direction: column;
+  }
+}
+#header-img {
+  max-width: 200px;
+}
+#nav-bar {
+}
+
+#nav-menu {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 15px; 
+  font-family: 'oswald', san-serif;
+  text-transform: uppercase;
+}
+
+// IDS
+
+#video {
+  
+}
+
+.mixer {
+  background-image:url('https://i.ibb.co/FzQfzmG/audio-disc-jockey-dj-1534.jpg');
+    height: 90vh;
+    background-position: center;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.mixer h1{
+  font-weight: 700;
+  font-size: 4em;
+  
+}
+
+.mixer:hover::after {
+    opacity: 0.5;
+}
+
+#comp-con, #music-con, #wave-con {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    padding: 25px;
+    border-radius: 3px;
+  
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+#comp-con {
+  background-color: #eee;
+}
+#music-con {
+  background-color: #eee;
+}
+#wave-con {
+  background-color: #eee;
+}
+
+
+#mixing {
+ 
+}
+
+#music-icon {
+ max-width: 64px;
+}
+
+#video {
+    max-width: 560px;
+    width: 100%;
+  }
+
+
+#voiceover-text {
+  padding: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 85%;
+  } 
+}
+
+#studio-time, #beats {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 2);
+    padding: 15px;
+    border-radius: 3px;
+    border: 2px;
+    background-color: #eee;
+    margin: 10px;
+  
+    @media (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 85%;
+  } 
+}
+
+#production {
+  background-color:#eee;
+  border-radius: 5px;
+}
+  span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    
+       @media (max-width: 768px) {
+    flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+  }
+    
+  }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#email {
+  width: 25vw;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#footer {
+
+}
+
+
+
