@@ -1,6 +1,6 @@
 ### transcend.audio
 
-![Landing-page](transcend.audio.png)
+![Landing-page](transcend.audio.PNG)
 
 *A static, one-page site that I created to understand how flex, scss and basic layout works.*
 
